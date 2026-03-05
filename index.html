@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="header-top">
+            <!-- hamburder menu -->
+            <div class="hamburger" id="js-navIcon">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+            <a href="#" class="logo">
+                <h1 class="title">SARU</h1>
+            </a>
+            <nav id="js-nav">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-text">
+                    <div class="slide-slow">
+                        <p class="header-txt">Junior WordPress developer</p>
+                    </div>
+                    <h1>Hi, I'm <span>Saru</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <!-- about -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-row">
+                    <div class="about-col-1">
+                        <img src="img/img1.jpg" alt="img" width="200" height="100" loading="lazy" class="img-fluid">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="about-desc">I am a Junior WordPress Developer with a strong foundation in building,
+                            customizing, and optimizing WordPress websites. Passionate about creating responsive,
+                            user-friendly, and high-performing websites, I specialize in theme development, plugin
+                            integration, and custom functionalities using PHP, HTML, CSS (SCSS), and JavaScript.</p>
+
+                        <div class="about-tab-ttl">
+                            <p class="about-tab-link active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="about-tab-link" onclick="opentab('experience')">Experience</p>
+                            <p class="about-tab-link" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="about-tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Expertise in building responsive websites and web
+                                    applications.</li>
+                                <li><span>WordPress Development</span><br>Custom theme development.</li>
+                                <li><span>Frontend & Backend</span><br>Proficient in HTML, CSS, (SCSS), JavaScript, PHP,
+                                    and MySQL, WordPress Theme and Git.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about-tab-content" id="experience">
+                            <ul>
+                                <li><span>2024</span><br>5-month WordPress Internship at Parijat Info.Tech</li>
+                                <li><span>2024 - Present</span><br>Website Developer specializing in WordPress</li>
+                            </ul>
+                        </div>
+                        <div class="about-tab-content" id="education">
+                            <ul>
+                                <li><span>2017</span><br>SEE from Lalima Secondary Boarding School, Jhapa Nepal</li>
+                                <li><span>2018 - 2019</span><br>+2 from Model Campus Damak, Jhapa Nepal</li>
+                                <li><span>2019 - 2024</span><br>BCA from Model Campus Damak, Jhapa Nepal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- services -->
+        <section id="services" services class="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa fa-code"></i>
+                        <h2>Custom WordPress Development</h2>
+                        <p>Crafting unique, functional, and responsive WordPress websites.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-crop"></i>
+                        <h2>Front-End Web Design</h2>
+                        <p>Designing clean, engaging, and intuitive user interfaces using HTML, CSS (SCSS), and
+                            JavaScript.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-puzzle-piece"></i>
+                        <h2>Custom Post Types & Taxonomies </h2>
+                        <p>Organizing content efficiently for structured and scalable web solutions.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="img/img01.png" alt="work" width="500" height="400" loading="lazy">
+                        <div class="layer">
+                            <h3>Website of Dunx</h3>
+                            <p>Technologies Used: WordPress, PHP, HTML, CSS (SCSS/SASS), JavaScript.</p>
+                            <p> Description: A fully responsive and SEO-optimized website designed. </p>
+                            <a href="#"><i class="fa fa-outdent"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/img02.png" alt="work" width="500" height="400" loading="lazy">
+                        <div class="layer">
+                            <h3>Megumi-food</h3>
+                            <p>Technologies Used: WordPress, Elementor, Custom Theme Development</p>
+                            <p>Description: Designed a modern and mobile-friendly website with custom layouts and
+                                interactive elements for enhanced user engagement.</p>
+                            <p>Live Site: [https://cms.aozora-test.info/megumi-food/]</p>
+                            <a href="#"><i class="fa fa-outdent"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/img03.png" alt="work" width="500" height="400" loading="lazy">
+                        <div class="layer">
+                            <h3>st.mary</h3>
+                            <p>Technologies Used: WordPress, Custom CSS, JavaScript</p>
+                            <p>Description: Developed a feature-rich website with custom post types, dynamic filtering,
+                                and optimized loading speed.</p>
+                            <p> Live Site: [https://cms.aozora-test.info/stmary/]</p>
+                            <a href="#"><i class="fa fa-outdent"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+    <div class="copyright">
+        <p>Designed & Developed by Saru Rai |  &copy;  2025 All Rights Reserved.</p>
+    </div>
+
+</body>
+
+</html>
